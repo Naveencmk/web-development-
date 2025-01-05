@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="app_name">ToDo LiSt</h1>
+    <hr>
+    <h4>Enter your task here</h4>
+    <span><input type="text" id="inp"><button id="btn">click to add</button></span>
+    <h1></h1>
+    <hr>
+       <ul id="listt"><b>Task to do</b>
+       </ul>
+    <hr>
+    <button id="clr">Clear all task</button>
+</body>
+<script>
+    let a=prompt("Enter your name");
+    let n=document.getElementById("app_name");
+    n.textContent=`${a}'s ToDO LiSt`;
+   let btn=document.getElementById("btn");
+   let inp=document.getElementById("inp");
+   let lt=document.getElementById("listt");
+
+   let lis=[]
+   btn.addEventListener("click",(event)=>{
+      if (inp.value !='')
+      {
+        lis.push(inp.value)
+        lt.innerHTML+='<li>'+inp.value+"</li>"
+        
+    }
+      else{
+        alert("task enter pannunga ")
+      }
+   })
+</script>
+</html>
