@@ -3,49 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="app_name">ToDo LiSt</h1>
-    <hr>
-    <h4>Enter your task here</h4>
-    <span><input type="text" id="inp"><button id="btn">click to add</button></span>
-    <h1></h1>
-    <hr>
-       <b>Task to do</b>
-       <ul id="listt">
-       </ul>
-    <hr>
-    <button id="clr">Clear all task</button>
+    <div id="header">
+        <nav>
+            <h1 id="brand">Navya Bags</h1> 
+            <ul id="navigation">
+                <li>home</li>
+                <li>products</li>
+                <li>about us</li>
+                <li>conact us</li>
+            </ul>
+        </nav>
+    </div>
+    <div id="search">
+        <input type="text" placeholder="search">
+    </div>
+    <div id="products">
+        <div class="box">
+            <img src="OIP.jpeg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, harum suscipit illum quo autem possimus sapiente mollitia fuga veritatis ut?</p>
+        </div>
+        <div class="box">
+            <img src="2.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, harum suscipit illum quo autem possimus sapiente mollitia fuga veritatis ut?</p>
+        </div>
+        <div class="box">
+            <img src="3.jpeg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, harum suscipit illum quo autem possimus sapiente mollitia fuga veritatis ut?</p>
+        </div>
+    </div>
+    <div id="about_as">
+        <h1 style="text-align: center;">About us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eius deleniti, mollitia optio, quae, perspiciatis sit ad laudantium amet minus officia a voluptatem tenetur distinctio hic? Culpa deserunt nulla sapiente assumenda impedit accusamus ut animi sit dolorum, aut aliquam fugiat optio autem ex ducimus quis nesciunt doloribus unde suscipit voluptatum, veritatis necessitatibus inventore natus eligendi. Perferendis tenetur eos accusantium error fuga doloremque assumenda voluptate veniam deleniti voluptatem eaque quisquam iste excepturi recusandae vitae, a quos aperiam mollitia sed veritatis amet delectus. Aperiam voluptatum laborum soluta doloribus. Quos, cum hic. Eaque quia est tenetur obcaecati delectus officiis vitae accusamus odit cupiditate!</p>
+    </div>
+    <div id="contact">
+        <h1>Contact</h1>
+        <p>+91 9988776655</p>
+        <p>navyabags@gmail.com</p>
+        <br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil qui corrupti ducimus eum voluptatum praesentium quod numquam iure mollitia fuga ipsa exercitationem veniam ipsum, distinctio optio minus impedit quis voluptas facilis quae eligendi repellendus at quibusdam doloremque? Ipsum unde vitae non saepe, sapiente, quod libero maxime tenetur magni nihil, sint corrupti reprehenderit voluptatem! Amet ut et eos ex numquam, veritatis maxime itaque fuga cumque neque rem veniam porro at vitae deserunt laboriosam, ipsum esse corporis odit nisi accusamus magnam iure obcaecati accusantium? Ut deleniti quas adipisci fugiat veritatis accusamus. Eius ipsum laudantium neque esse voluptates obcaecati eos quasi voluptatum vel.</p>
+    </div>
 </body>
-<script>
-    let a=prompt("Enter your name");
-    let n=document.getElementById("app_name");
-    n.textContent=`${a}'s ToDO LiSt`;
-   let btn=document.getElementById("btn");
-   let inp=document.getElementById("inp");
-   let clr=document.getElementById("clr");
-   let lt=document.getElementById("listt");
-
-   let lis=[]
-   btn.addEventListener("click",(event)=>{
-      if (inp.value !='')
-      {
-        lis.push(inp.value)
-        lt.innerHTML+='<li>'+inp.value+"</li>"
-        
-    }
-      else{
-        alert("task enter pannunga ")
-      }
-   })
-   clr.addEventListener("click",(event)=>{
-      if (inp.value !='')
-      {
-        lt.innerHTML=''
-        
-    }
-   })
-</script>
 </html>

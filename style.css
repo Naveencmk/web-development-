@@ -1,7 +1,68 @@
-body{
-    background-color: aquamarine;
+*{
+    margin:0;
 }
-#app_name{
-    text-align:center;
-    color:slategray;
+nav{
+    color:white;
+    background-color: black;
+    padding:15px;
+}
+#brand,ul,li{
+    display: inline;
+}
+li{
+    margin-left: 10px;
+    color:gray;
+}
+ul{
+    margin-left:60%
+}
+
+li:hover{
+    color:white;
+    cursor: pointer;
+}
+
+input{
+    width:60%;
+    padding:15px;
+}
+#search{
+    padding: 30px;
+    text-align: center;
+}
+
+img{
+    width:220px;
+    height:230px;
+}
+.box{
+    border:2px black solid;
+    display: inline-block;
+    width:220px;
+    text-align: justify;
+    margin:20px;
+    cursor:pointer;
+}
+.box>p{
+    padding:10px;
+}
+#products{
+    text-align: center;
+}
+.box:hover{
+    background-color: black;
+    color:white;
+}
+
+#about_as{
+    margin-top:20px;
+    padding:10px;
+    text-align: justify;
+}
+
+#contact{
+    background-color: black;
+    color:aliceblue;
+    text-align: center;
+    padding:30px;
 }
